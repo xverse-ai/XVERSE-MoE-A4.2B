@@ -24,6 +24,8 @@
 
 ## 模型介绍
 
+**XVERSE-MoE-A4.2B-Chat**为 **XVERSE-MoE-A4.2B** 底座模型对齐后的版本。
+
 **XVERSE-MoE-A4.2B** 是由深圳元象科技自主研发的支持多语言的大语言模型（Large Language Model），使用混合专家模型（MoE，Mixture-of-experts）架构，模型的总参数规模为 258 亿，实际激活的参数量为 42 亿，本次开源的模型为底座模型 **XVERSE-MoE-A4.2B**，主要特点如下：
 
 - **模型结构**：XVERSE-MoE-A4.2B 为 Decoder-only 的 Transformer 架构，将密集模型的 FFN 层扩展为专家层，不同于传统 MoE 中每个专家的大小与标准 FFN 相同（如Mixtral 8x7B ），使用了更细粒度的专家，每个专家是标准 FFN 大小的 1/4，并设置了共享专家（Shared Expert）和非共享专家（Non-shared Expert）两类，共享专家在计算时始终被激活，非共享专家通过 Router 选择性激活。

@@ -23,6 +23,8 @@
 
 ## Model Introduction
 
+**XVERSE-MoE-A4.2B-Chat** is the aligned version of model **XVERSE-MoE-A4.2B**.
+
 **XVERSE-MoE-A4.2B** is a multilingual large language model, independently developed by Shenzhen Yuanxiang Technology which is using Mixture-of-experts (MoE) architecture. The total parameter scale of the model is 25.8 billion, with an actual number of activated parameters being 4.2 billion. The models released this time is the base model **XVERSE-MoE-A4.2B**. Its key features are as follows:
 
 - **Model Structure**: XVERSE-MoE-A4.2B uses the mainstream Decoder-only Transformer network structure that extends the FFN layer of dense models to expert layers. Unlike traditional MoE model where each expert has the same size as standard FFN (such as Mixtral 8x7B), it uses more fine-grained experts, with each expert being 1/4 the size of a standard FFN. It includes shared experts and non-shared experts, where shared experts are always activated during computation, and non-shared experts are selectively activated through a Router.
