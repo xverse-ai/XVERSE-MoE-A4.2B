@@ -18,6 +18,7 @@
 </h4>
 
 ## Update Information
+- **[2025/12/30]** Released domain-specific pretrained model **XVERSE-Ent-A4.2B**, based on **XVERSE-MoE-A4.2B**.
 - **[2024/04/28]** Released **XVERSE-MoE-A4.2B-Chat** MoE chat model.
 - **[2024/04/02]** Released **XVERSE-MoE-A4.2B** MoE base model, the Chat version model will be released later.
 
